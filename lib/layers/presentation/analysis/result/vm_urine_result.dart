@@ -4,16 +4,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:test_yocheck_pet/common/common.dart';
-import 'package:test_yocheck_pet/common/dart/extension/datetime_extension.dart';
 import 'package:test_yocheck_pet/layers/domain/usecase/urine/urine_ai_analysis_usecase.dart';
-import 'package:test_yocheck_pet/layers/model/authorization.dart';
 
-import '../../../../../../common/util/branch.dart';
-import '../../../../../../common/util/text_format.dart';
 import '../../../../../../main.dart';
-import '../../../domain/usecase/urine/urine_chart_usecase.dart';
-import '../../../entity/urine_chart_dto.dart';
-import '../../../model/vo_chart.dart';
 import '../../ingredient/v_ingredient_result.dart';
 import '../../widget/w_custom_dialog.dart';
 import 'd_ai_analysis.dart';

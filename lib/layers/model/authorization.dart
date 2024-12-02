@@ -1,10 +1,6 @@
 
-import 'package:dio/dio.dart';
-import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../../common/data/preference/prefs.dart';
-import '../../main.dart';
 
 /// Attributes to store user authorization information
 class Authorization{

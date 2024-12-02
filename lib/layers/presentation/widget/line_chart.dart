@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
-import 'package:intl/intl.dart';
 import 'package:test_yocheck_pet/common/common.dart';
 import 'package:test_yocheck_pet/common/util/branch.dart';
 

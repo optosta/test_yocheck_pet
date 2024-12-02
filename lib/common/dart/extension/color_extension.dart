@@ -1,8 +1,5 @@
-import 'dart:math' as math;
-
 // import 'package:test_yocheck_pet/app.dart';
 // import 'package:test_yocheck_pet/common/dart/extension/context_extension.dart';
-import 'package:flutter/material.dart';
 
 // extension ColorExtension on Color {
 //   Color getSwatchByBrightness(int swatchValue) {

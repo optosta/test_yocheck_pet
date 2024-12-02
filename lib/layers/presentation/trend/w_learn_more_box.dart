@@ -3,8 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:test_yocheck_pet/common/common.dart';
-import 'package:test_yocheck_pet/common/constant/app_dimensions.dart';
-import 'package:test_yocheck_pet/layers/presentation/widget/frame_container.dart';
 import 'package:test_yocheck_pet/layers/presentation/widget/style_text.dart';
 
 

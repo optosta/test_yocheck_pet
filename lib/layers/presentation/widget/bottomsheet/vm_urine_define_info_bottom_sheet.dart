@@ -91,7 +91,6 @@ class UrineDefineInfoBottomSheetViewModel extends ChangeNotifier {
           if (_chartData.length == dateRange) break;
         }
       } else if (urineChartFuture?.status.code == 'ERR_MS_4003') {
-        print('해당 날짜에 검사한 이력이 없습니다.');
       }
       _isLoading = false;
       notifyListeners();

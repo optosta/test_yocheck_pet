@@ -24,7 +24,6 @@ var logger = Logger(
         lineLength: 120,     // width of the output
         colors: true,        // Colorful log messages
         printEmojis: false,  // Print an emoji for each log message
-        printTime: false     // Should each log print contain a timestamp
     )
 );
 

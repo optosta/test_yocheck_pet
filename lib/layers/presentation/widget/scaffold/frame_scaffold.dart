@@ -3,7 +3,6 @@ import 'package:test_yocheck_pet/common/common.dart';
 import 'package:test_yocheck_pet/layers/presentation/widget/style_text.dart';
 
 import '../../../../common/util/app_keyboard_util.dart';
-import '../custom_app_bar.dart';
 
 class FrameScaffold extends StatelessWidget {
   final String? appBarTitle;
