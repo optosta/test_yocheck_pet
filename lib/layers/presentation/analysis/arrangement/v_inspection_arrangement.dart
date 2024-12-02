@@ -12,7 +12,6 @@ import 'package:test_yocheck_pet/layers/presentation/widget/style_text.dart';
 import '../../../model/enum/arrangement_type.dart';
 import '../bluetooth/v_bluetooth_connection.dart';
 import 'vm_inspection_arrangement.dart';
-import 'w_inspection_header.dart';
 
 
 /// 소변 검사 준비 화면
@@ -51,7 +50,7 @@ class _InspectionArrangementViewState extends State<InspectionArrangementView>{
                   children: [
                     /// 검사 준비 헤더
                     const Gap(AppDim.large),
-                    const InspectionHeader(),
+                    //const InspectionHeader(),
 
                     /// 검사 전 체크 사항(블루투스ON, 검사기ON)
                     const Gap(AppDim.xLarge),

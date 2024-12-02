@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_blue_plus/flutter_blue_plus.dart';
 import 'package:test_yocheck_pet/common/common.dart';
-import 'package:test_yocheck_pet/common/util/branch.dart';
 import 'package:test_yocheck_pet/layers/entity/urine_save_dto.dart';
 import 'package:test_yocheck_pet/layers/model/authorization.dart';
 
@@ -226,7 +225,6 @@ class BluetoothConnectionViewModel extends ChangeNotifier{
     receivedSubscription = notificationChar!.onValueReceived.listen((value) {
       // 버퍼에 수신된 데이터를 쌓는다.
       sb.write((String.fromCharCodes(value)).replaceAll('\n', ''));
-      logger.i(sb);
 
       if(sb.toString().contains('ERR')) {
         configureView(BluetoothStatus.stripError);
@@ -240,10 +238,8 @@ class BluetoothConnectionViewModel extends ChangeNotifier{
 
           var urineList = <String>[];
           for(int i = 0 ; i < 11 ; i++){
-            urineList.add(Branch.urineGradeResult(inspectionItemTypeList[i], double.parse(urineRowDataList[i])));
+            urineList.add(urineRowDataList[i]);
           }
-          // 결과 데이터 서버에 저장
-          saveResultData(urineList);
 
           allClean();
           Nav.doPop(context); // 현재 검사 진행 화면 pop

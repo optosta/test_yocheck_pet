@@ -16,7 +16,7 @@ import '../widget/w_custom_dialog.dart';
 class UrineViewModel extends ChangeNotifier {
 
   UrineViewModel(){
-    getUserName();
+   // getUserName();
   }
 
   /// 유저 이름

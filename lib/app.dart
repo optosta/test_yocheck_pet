@@ -4,7 +4,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 import 'common/common.dart';
-import 'layers/model/authorization.dart';
 import 'layers/presentation/auth/login/v_login.dart';
 import 'layers/presentation/home/v_home.dart';
 
@@ -33,10 +32,7 @@ class _MyAppState extends State<MyApp> with AfterLayoutMixin{
       theme:Theme.of(context).copyWith(
         colorScheme: themeData.colorScheme.copyWith(primary: AppColors.primaryColor),
       ),
-      initialRoute:
-          (Authorization().userID.isEmpty || Authorization().userID == '-')
-              ? 'v_login'
-              : 'v_home',
+      initialRoute: 'v_home',
       routes: {
         'v_login': (context) => const LoginView(),
         'v_home': (context) => const HomeView(),

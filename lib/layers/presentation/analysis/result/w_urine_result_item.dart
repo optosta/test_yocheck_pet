@@ -49,6 +49,7 @@ class UrineResultListItem extends StatelessWidget {
                         StyleText(
                           maxLinesCount: 2,
                           softWrap: true,
+                          size: AppDim.fontSizeLarge,
                           text: AppConstants.urineLabelList[index],
                           fontWeight: AppDim.weight500,
                           color: AppColors.blackTextColor,
@@ -61,14 +62,6 @@ class UrineResultListItem extends StatelessWidget {
                 ),
                 const Gap(AppDim.small),
 
-                /// 결과 Image
-                Expanded(
-                  child: Image.asset(
-                      Branch.resultStatusToImageStr(status, index),
-                  ),
-                ),
-                const Gap(AppDim.medium),
-
                 /// 결과 Text
                 Container(
                   constraints: const BoxConstraints(
@@ -76,18 +69,17 @@ class UrineResultListItem extends StatelessWidget {
                     maxWidth: 60,
                     minHeight: 20,
                   ),
-                  padding: EdgeInsets.all(2),
+                  padding: const EdgeInsets.all(2),
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(5)),
+                    borderRadius: const BorderRadius.all(Radius.circular(5)),
                     color: Branch.resultStatusToBgColor(status, index),
                   ),
                   child: Padding(
                     padding: const EdgeInsets.only(top: 2),
                     child: StyleText(
-                      text: Branch.resultStatusToText(status, index),
+                      text: status,
                       color: Branch.resultStatusToColor(status, index),
                       fontWeight: AppDim.weightBold,
-                      size: AppDim.fontSizeSmall,
                       maxLinesCount: 2,
                       softWrap: true,
                       align: TextAlign.center,

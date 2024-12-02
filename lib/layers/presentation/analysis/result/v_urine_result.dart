@@ -102,7 +102,7 @@ class _UrineResultViewState extends State<UrineResultView> {
                   return  DefaultButton(
                     btnName: 'result_analysis'.tr(),
                     onPressed: () {
-                      provider.fetchAiAnalyze(widget.urineList);
+                     // provider.fetchAiAnalyze(widget.urineList);
                     }, // 성분분석 결과 화면 이동
                   );
                 },
