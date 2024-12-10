@@ -230,7 +230,7 @@ class BluetoothConnectionViewModel extends ChangeNotifier{
         configureView(BluetoothStatus.stripError);
       }
 
-      if(sb.toString().contains('#A11')){
+      if(sb.toString().contains('#G11')){
         logger.i('검사기로부터 수신된 데이터: ${sb.toString().replaceAll('#T', '\n#T')}');
         List<String> urineRowDataList = Etc.createUrineValuesList(Urine.fromValue(sb.toString()));
 
